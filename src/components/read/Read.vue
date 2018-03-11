@@ -15,6 +15,7 @@ export default{
     commonFooter
     }
 }
+
 </script>
 
 <style scoped>

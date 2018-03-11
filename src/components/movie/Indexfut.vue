@@ -5,7 +5,7 @@
     </div>
 
   <ul class="fut">
-      <li v-for="movie in movieList" :key="movie.id" class="movieli"> 
+      <li  @click="jump(movie.id)" v-for="movie in movieList" :key="movie.id" class="movieli"> 
         <div class="left">
               <img v-lazy="movie.image" alt="图片找不到啦">
         </div>
@@ -23,59 +23,64 @@
 </template>
 
 <script>
-    import Axios from 'axios'
- export default{
-        data(){
-            return{
-                movieList:[],
-               isShow:true
-            };
-        },
-        mounted(){
-            let url1 = global.API_PROXY+"https://api-m.mtime.cn/Movie/MovieComingNew.api?locationId=829"
-             Axios.get(url1)                                        
-             .then(res=>{console.log(res);
-                this.isShow = false;
-                this.movieList = res.data.moviecomings;
-             })
-             .catch();
-        }       
+import Axios from "axios";
+export default {
+  data() {
+    return {
+      movieList: [],
+      isShow: true
+    };
+  },
+  methods: {
+    jump(mid) {
+      this.$router.push(`/movie/Futmovie/${mid}`);
     }
-
+  },
+  mounted() {
+    //let url1 =global.API_PROXY +"https://api-m.mtime.cn/Movie/MovieComingNew.api?locationId=829";
+    let url2 = "../static/moviefut.json";
+    Axios.get(url2)
+      .then(res => {
+        //console.log(res);
+        this.isShow = false;
+        this.movieList = res.data.moviecomings;
+      })
+      .catch();
+  }
+};
 </script>
 
 <style scoped>
-     .fut{
-        overflow-y: scroll;
-        position: absolute;
-        top:120px;
-        right:5px;
-        left: 5px;
-        bottom: 55px;
-     }
-     .loading{
-         position: absolute;
-         top: 110px;
-         bottom: 50px;
-         left: 0;
-         right: 0;
-     }
-     .loading img{
-         margin: 0 auto;
-     }
-     .movieli{
-         border-bottom:1px solid rgb(230, 229, 229) ;
-         margin:3px 6px;
-        display: flex;
-     }
-     .left{
-         width: 30%;
-         display: block;
-     }
-     .right{
-         padding-left: 6px;
-         width: 70%;
-         text-align: left;
-     }
-
+.fut {
+  overflow-y: scroll;
+  position: absolute;
+  top: 120px;
+  right: 5px;
+  left: 5px;
+  bottom: 55px;
+}
+.loading {
+  position: absolute;
+  top: 110px;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+}
+.loading img {
+  margin: 0 auto;
+}
+.movieli {
+  border-bottom: 1px solid rgb(230, 229, 229);
+  margin: 3px 6px;
+  display: flex;
+}
+.left {
+  width: 30%;
+  display: block;
+}
+.right {
+  padding-left: 6px;
+  width: 70%;
+  text-align: left;
+}
 </style>

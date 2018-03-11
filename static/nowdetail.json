@@ -1,0 +1,217 @@
+{
+  "code": "1",
+  "data": {
+    "advertisement": {
+      "advList": [{
+        "advTag": "",
+        "endDate": 1545494399,
+        "isHorizontalScreen": false,
+        "isOpenH5": false,
+        "startDate": 1514736000,
+        "tag": "建行闪付",
+        "type": "203",
+        "typeName": "影片详情页banner2",
+        "url": "https://static1.mtime.cn/feature/mobile/banner/2018/0211/jh750210.html"
+      }],
+      "count": 1,
+      "error": "",
+      "success": true
+    },
+    "basic": {
+      "actors": [{
+        "actorId": 1311848,
+        "img": "http://img5.mtime.cn/ph/2017/02/17/093429.48679538_1280X720X2.jpg",
+        "name": "张译",
+        "nameEn": "Yi Zhang",
+        "roleImg": "http://img5.mtime.cn/mg/2018/02/19/120817.38191951.jpg",
+        "roleName": "杨锐--“蛟龙突击队”队长"
+      }, {
+        "actorId": 2189621,
+        "img": "http://img5.mtime.cn/ph/2018/02/19/170530.59964405_1280X720X2.jpg",
+        "name": "黄景瑜",
+        "nameEn": "Johnny Huang",
+        "roleImg": "http://img5.mtime.cn/mg/2018/02/19/120823.72480722.jpg",
+        "roleName": "顾顺--“蛟龙突击队”狙击手"
+      }, {
+        "actorId": 1258273,
+        "img": "http://img31.mtime.cn/ph/2014/03/14/153731.67413091_1280X720X2.jpg",
+        "name": "海清",
+        "nameEn": "Christina Hai",
+        "roleImg": "http://img5.mtime.cn/mg/2018/02/19/120830.36249943.jpg",
+        "roleName": "夏楠"
+      }, {
+        "actorId": 1819380,
+        "img": "http://img5.mtime.cn/ph/2018/02/28/142409.19372397_1280X720X2.jpg",
+        "name": "杜江",
+        "nameEn": "Jiang Du",
+        "roleImg": "http://img5.mtime.cn/mg/2018/02/19/120837.67649781.jpg",
+        "roleName": "徐宏--“蛟龙突击队”副队长、爆破手"
+      }, {
+        "actorId": 1551279,
+        "img": "http://img5.mtime.cn/ph/2018/02/22/140518.94796280_1280X720X2.jpg",
+        "name": "蒋璐霞",
+        "nameEn": "Luxia Jiang",
+        "roleImg": "http://img5.mtime.cn/mg/2018/02/19/120843.67316538.jpg",
+        "roleName": "佟莉--“蛟龙突击队”机枪手"
+      }, {
+        "actorId": 1806167,
+        "img": "http://img5.mtime.cn/ph/2018/02/26/115240.33757959_1280X720X2.jpg",
+        "name": "尹昉",
+        "nameEn": "Fang Yin",
+        "roleImg": "http://img5.mtime.cn/mg/2018/02/19/120851.58572668.jpg",
+        "roleName": "李懂--“蛟龙突击队”狙击手观察员"
+      }, {
+        "actorId": 2113992,
+        "img": "http://img5.mtime.cn/ph/2018/02/28/113414.58213175_1280X720X2.jpg",
+        "name": "郭家豪",
+        "nameEn": "Jiahao Guo",
+        "roleImg": "http://img5.mtime.cn/mg/2018/02/19/120857.29054689.jpg",
+        "roleName": "陆琛--“蛟龙突击队”医疗兵"
+      }, {
+        "actorId": 2288590,
+        "img": "http://img5.mtime.cn/ph/2017/08/15/104152.80179323_1280X720X2.jpg",
+        "name": "王雨甜",
+        "nameEn": "Yutian Wang",
+        "roleImg": "http://img5.mtime.cn/mg/2018/02/19/120904.99423540.jpg",
+        "roleName": "张天德\"石头\"--“蛟龙突击队”机枪手"
+      }, {
+        "actorId": 2288591,
+        "img": "http://img5.mtime.cn/ph/2017/08/15/104624.52461310_1280X720X2.jpg",
+        "name": "麦亨利",
+        "nameEn": "Henry Prince Mak",
+        "roleImg": "http://img5.mtime.cn/mg/2018/02/19/120913.58344446.jpg",
+        "roleName": "庄羽--“蛟龙突击队”通信兵"
+      }, {
+        "actorId": 1250877,
+        "img": "http://img31.mtime.cn/ph/2016/01/08/102820.24124767_1280X720X2.jpg",
+        "name": "张涵予",
+        "nameEn": "Hanyu Zhang",
+        "roleImg": "http://img5.mtime.cn/mg/2018/02/19/121106.57852280.jpg",
+        "roleName": "舰长（特别出演）"
+      }, {
+        "actorId": 1177407,
+        "img": "http://img31.mtime.cn/ph/2016/08/24/160128.95518465_1280X720X2.jpg",
+        "name": "王强",
+        "nameEn": "Qiang Wang",
+        "roleImg": "http://img5.mtime.cn/mg/2018/02/19/121034.35668560.jpg",
+        "roleName": "政委"
+      }, {
+        "actorId": 916259,
+        "img": "http://img31.mtime.cn/ph/2015/10/30/100837.70157999_1280X720X2.jpg",
+        "name": "任达华",
+        "nameEn": "Simon Yam",
+        "roleImg": "",
+        "roleName": "报社老板"
+      }, {
+        "actorId": 2154055,
+        "img": "http://img31.mtime.cn/ph/2015/09/15/101530.78270659_1280X720X2.jpg",
+        "name": "王彦霖",
+        "nameEn": "Yanlin Wang",
+        "roleImg": "",
+        "roleName": "罗星"
+      }],
+      "award": {
+        "awardList": [],
+        "totalNominateAward": 0,
+        "totalWinAward": 0
+      },
+      "bigImage": "http://img5.mtime.cn/mg/2018/02/03/145913.46518961.jpg",
+      "commentSpecial": "\"蛟龙突击队\"演绎神兵天降",
+      "community": {},
+      "director": {
+        "directorId": 892901,
+        "img": "http://img31.mtime.cn/ph/2014/03/18/162315.35570292_1280X720X2.jpg",
+        "name": "林超贤",
+        "nameEn": "Dante Lam"
+      },
+      "festivals": [],
+      "hotRanking": -1,
+      "img": "http://img5.mtime.cn/mt/2018/02/17/150049.57218452_1280X720X2.jpg",
+      "is3D": true,
+      "isDMAX": true,
+      "isEggHunt": false,
+      "isFilter": false,
+      "isIMAX": false,
+      "isIMAX3D": true,
+      "isTicket": true,
+      "message": "该操作将清除您对该片的评分！是否确认？",
+      "mins": "138分钟",
+      "movieId": 240425,
+      "movieStatus": 1,
+      "name": "红海行动",
+      "nameEn": "Operation Red Sea",
+      "overallRating": 8.2,
+      "personCount": 20,
+      "quizGame": {},
+      "releaseArea": "中国",
+      "releaseDate": "20180216",
+      "sensitiveStatus": false,
+      "showCinemaCount": 45,
+      "showDay": 1520668800,
+      "showtimeCount": 242,
+      "stageImg": {
+        "count": 213,
+        "list": [{
+          "imgId": 7358276,
+          "imgUrl": "http://img5.mtime.cn/pi/2017/05/19/183823.90614254_1280X720X2.jpg"
+        }, {
+          "imgId": 7358277,
+          "imgUrl": "http://img5.mtime.cn/pi/2017/05/19/183829.25116616_1280X720X2.jpg"
+        }, {
+          "imgId": 7358278,
+          "imgUrl": "http://img5.mtime.cn/pi/2017/05/19/183835.12822807_1280X720X2.jpg"
+        }, {
+          "imgId": 7426453,
+          "imgUrl": "http://img5.mtime.cn/pi/2018/01/02/094104.18026516_1280X720X2.jpg"
+        }]
+      },
+      "story": "索马里海域外，中国商船遭遇劫持，船员全数沦为阶下囚。蛟龙突击队沉着应对，潜入商船进行突袭，成功解救全部人质。返航途中，非洲北部伊维亚共和国发生政变，恐怖组织连同叛军攻入首都， 当地华侨面临危险，海军战舰接到上级命令改变航向，前往执行撤侨任务。　　蛟龙突击队八人，整装待发。时间紧迫，在“撤侨遇袭可反击，相反则必须避免交火，以免引起外交冲突”的大原则下，海军战舰及蛟龙突击队深入伊维亚，在恶劣的环境下，借助海陆等多种装备，成功转移等候在码头的中国侨民，并在激烈的遭遇战之后，营救了被恐怖分子追击的中国领事馆巴士。　　然而事情尚未完结，就在掩护华侨撤离之际，蛟龙突击队收到中国人质被恐怖分子劫持的消息。众人深感责任重大，义无反顾地再度展开营救行动。前方路途险恶，蛟龙突击队即将遭遇的，远不止人质营救那么简单,恐怖分子的惊天阴谋即将浮出水面……",
+      "style": {
+        "isLeadPage": 0,
+        "leadImg": "https://img2.mtime.cn/mg/.jpg",
+        "leadUrl": ""
+      },
+      "totalNominateAward": 0,
+      "totalWinAward": 0,
+      "type": ["动作", "剧情"],
+      "url": "https://movie.mtime.com/240425/",
+      "video": {
+        "count": 20,
+        "hightUrl": "https://vfx.mtime.cn/Video/2018/01/10/mp4/180110193343342236.mp4",
+        "img": "http://img5.mtime.cn/mg/2018/01/10/193339.31526665_235X132X4.jpg",
+        "title": "红海行动 \"蛟龙出海\"版主预告",
+        "url": "https://vfx.mtime.cn/Video/2018/01/10/mp4/180110193343342236_480.mp4",
+        "videoId": 69198,
+        "videoSourceType": 1
+      }
+    },
+    "boxOffice": {
+      "movieId": 240425,
+      "ranking": 2,
+      "todayBox": 4111193038,
+      "todayBoxDes": "4111.19",
+      "todayBoxDesUnit": "今日实时(万)",
+      "totalBox": 326159012680,
+      "totalBoxDes": "32.62",
+      "totalBoxUnit": "累计票房(亿)"
+    },
+    "live": {
+      "count": 1,
+      "img": "http://img5.mtime.cn/mg/2018/01/30/095703.91998912.jpg",
+      "liveId": 732,
+      "playNumTag": "32.8万次播放",
+      "playTag": "",
+      "status": 4,
+      "title": "《红海行动》发布会"
+    },
+    "related": {
+      "goodsCount": 0,
+      "goodsList": [],
+      "relateId": 0,
+      "relatedUrl": "https://mall-wv.mtime.cn/#!/commerce/list/",
+      "type": 0
+    }
+  },
+  "msg": "成功",
+  "showMsg": ""
+}

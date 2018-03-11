@@ -6,7 +6,7 @@
 
   <ul class="now">
       <li @click="jump(movie.id)" v-for="movie in movieList" :key="movie.id" class="movieli"> 
-        <div class="left">
+        <div class="left">  <!-- @click="jump(movie.id)"  -->
               <img v-lazy="movie.img" alt="图片找不到啦">
         </div>
         <div class="right">
@@ -23,7 +23,7 @@
 </template>
 
 <script>
-    import Axios from 'axios'
+import Axios from 'axios'
     export default{
         data(){
             return{
@@ -32,8 +32,9 @@
             };
         },
         mounted(){
-            let url1 = global.API_PROXY+"https://api-m.mtime.cn/Showtime/LocationMovies.api?locationId=829"
-             Axios.get(url1)                                        
+         // let url1 = API_PROXY+"https://api-m.mtime.cn/Showtime/LocationMovies.api?locationId=829"
+            let url2 = "../static/movienow.json";
+            Axios.get(url2)                                        
              .then(res=>{//console.log(res);
                 this.isShow = false;
                 this.movieList = res.data.ms;
@@ -42,14 +43,15 @@
         },
         methods:{
             jump(mid){
-                
+               // console.log(mid);
+               this.$router.push(`/movie/moviedetail/${mid}`);
             }
         } 
        
     }
 </script>
 
-<style scoped>
+<style>
     .now{
         overflow-y: scroll;
         position: absolute;
