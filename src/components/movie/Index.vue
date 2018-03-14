@@ -3,7 +3,7 @@
 <commonHeader></commonHeader>
     <ul class="index">
         <router-link to="/index-now">
-            <li @click="changeColor($event)" :class="{color:isTrue}">正在上映</li>
+            <li @click="changeColor($event)" :data-flag="true" :class="{color:isTrue}">正在上映</li>
         </router-link>
        <router-link to="/index-fut">
              <li @click="changeColor($event)" :class="{color:isTrue}">即将上映</li>

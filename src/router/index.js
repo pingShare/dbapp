@@ -6,7 +6,8 @@ import Index_Fut from '@/components/movie/Indexfut'
 import MovieDetail from '@/components/movie/MovieDetail'
 import Futmovie from '@/components/movie/Futmovie'
 import Music from '@/components/music/Music'
-import Read from '@/components/read/Read'
+import Musiclist from '@/components/music/Musiclist'
+import Musicalbum from '@/components/music/Musicalbum'
 
 Vue.use(Router)
 
@@ -35,11 +36,15 @@ export default new Router({
       component:Futmovie
     },{
       path:"/music",
-      component:Music
-    },{
-        path:"/read",
-        component:Read
-      }
+      component:Music,
+      children:[{
+        path:"/music/musiclist",
+        component:Musiclist
+      },{
+        path:"/music/musicalbum/:musicid",
+        component:Musicalbum
+      }]
+    }
 
   ]
 })

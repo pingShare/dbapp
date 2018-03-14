@@ -1,7 +1,7 @@
 <template>
   <div>
-    <commonHeader></commonHeader>
-
+    <commonHeader></commonHeader>  
+         <router-view></router-view>
     <commonFooter></commonFooter>
   </div>
 </template>
@@ -11,12 +11,18 @@ import commonHeader from "../Header"
 import commonFooter from "../Footer"
 export default{
     components:{
-    commonHeader,
-    commonFooter
+      commonHeader,
+      commonFooter
     }
 }
 </script>
 
 <style scoped>
-
+.music{
+  overflow-y: scroll;
+  position: absolute;
+  top: 65px;
+  bottom: 55px;
+  width:100%;
+}
 </style>

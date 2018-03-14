@@ -126,7 +126,6 @@ export default {
 .detail_story {
   padding: 0.4rem;
   text-indent: 0.5rem;
-  /* line-height: 0.8rem; */
   font-size: 0.3rem;
   text-align: left;
 }
@@ -139,7 +138,6 @@ export default {
   color: #777;
   border-radius: 6px;
   margin: 12px 0;
-  /* font-size: 18px; */
 }
 .story {
   display: -webkit-box;

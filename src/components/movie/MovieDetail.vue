@@ -51,7 +51,7 @@ export default{
        let url2 = "../../static/nowdetail.json";
        Axios.get(url2).then(res=>{
            // console.log(this.$root.$route.params.mid);
-           //console.log($route.params.mid); $route is not defined
+           // console.log($route.params.mid); $route is not defined
             console.log(res.data.data.basic);
           this.detail=res.data.data.basic;
 

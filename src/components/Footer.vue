@@ -1,7 +1,7 @@
 <template>
 <div class="footer">
     <router-link to="/index-now">电影</router-link>
-    <router-link to="/music" >音乐</router-link>
+    <router-link to="/music/musiclist" >音乐</router-link>
     <router-link to="/movie/index-now" >阅读</router-link>
     <router-link to="/movie/index-now" >我</router-link>
      
