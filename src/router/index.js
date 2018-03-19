@@ -8,7 +8,13 @@ import Futmovie from '@/components/movie/Futmovie'
 import Music from '@/components/music/Music'
 import Musiclist from '@/components/music/Musiclist'
 import Musicalbum from '@/components/music/Musicalbum'
-
+import Index_Pic from '@/components/picture/Index-pic'
+import PicList from '@/components/picture/PicList'
+import PicDetail from '@/components/picture/Picdetail'
+import Login from '@/components/person/Login'
+import Reg from '@/components/person/Reg'
+import Logined from '@/components/person/Logined'
+import Person from '@/components/person/Person'
 Vue.use(Router)
 
 export default new Router({
@@ -44,6 +50,31 @@ export default new Router({
         path:"/music/musicalbum/:musicid",
         component:Musicalbum
       }]
+    },{
+      path:'/index_pic',
+      component:Index_Pic,
+      children:[{
+        path:'/piclist',
+        component:PicList
+      },{
+        path:'/picdetail/:index',
+        component:PicDetail
+      }]
+    },{
+      path:'/person',
+      component:Person,
+      children:[
+        {
+          path:"/login",
+          component:Login
+        },{
+          path:"/reg",
+          component:Reg
+        },{
+          path:"/logined",
+          component:Logined
+        }
+      ]
     }
 
   ]

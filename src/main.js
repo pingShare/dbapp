@@ -7,7 +7,7 @@ import reset from './assets/css/reset.css'
 import rem from './assets/js/rem.js'
 import VueLazyload from 'vue-lazyload'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
-
+import store from '@/vuex/store'
 
 Vue.config.productionTip = false
 global.API_PROXY = 'https://bird.ioliu.cn/v1/?url='//服务器代理
@@ -18,6 +18,7 @@ Vue.use(VueAwesomeSwiper)
 new Vue({
   el: '#app',
   router,
+  store,
   template: '<App/>',
   components: { App }
 })

@@ -2,7 +2,7 @@
   <ul class="music">
       <li v-for="music in musicList" :key="music.id">
         <router-link :to="'/music/musicalbum/'+music.id">
-            <img :src="music.bg" alt="肿么肥四">
+            <img :src="music.bg" alt="肿么肥四(只管点￣ω￣=)">
         </router-link>
       </li>
       
