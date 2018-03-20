@@ -18,8 +18,10 @@ export default {
   mounted() {
     Axios.get("../static/photodata.json")
       .then(res => {
-        this.photoList = res.data.photoData;
-        // console.log(this.photoList);
+       this.photoList = res.data.photoData;
+       // console.log(this.$store.photoList);
+       //存到vuex里，方便获取
+       this.$store.dispatch('setPhotoList',res.data.photoData);
       })
       .catch();
   }

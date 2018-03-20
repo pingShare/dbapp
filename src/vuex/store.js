@@ -3,11 +3,13 @@ import Vuex from 'vuex'
 Vue.use(Vuex);
 
 const state = {
-    photoList:[]
+  photoList: []
 }
 
 const mutations = {
-
+  setPhotoList(state, status) {
+    state.photoList = status;
+  }
 }
 
 const getters = {
@@ -15,9 +17,16 @@ const getters = {
 }
 
 const actions = {
-
+  setPhotoList({
+    commit
+  }, status) {
+    commit('setPhotoList', status);
+  }
 }
 
 export default new Vuex.Store({
-    state,mutations,getters,actions
-})
+  state,
+  mutations,
+  getters,
+  actions
+});

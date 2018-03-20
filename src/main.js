@@ -8,11 +8,13 @@ import rem from './assets/js/rem.js'
 import VueLazyload from 'vue-lazyload'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import store from '@/vuex/store'
+import vueTouch from 'vue-touch'
 
 Vue.config.productionTip = false
 global.API_PROXY = 'https://bird.ioliu.cn/v1/?url='//服务器代理
 Vue.use(VueLazyload)
 Vue.use(VueAwesomeSwiper)
+Vue.use(vueTouch,{name:"v-touch"});
 
 /* eslint-disable no-new */
 new Vue({
