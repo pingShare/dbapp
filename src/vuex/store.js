@@ -3,7 +3,8 @@ import Vuex from 'vuex'
 Vue.use(Vuex);
 
 const state = {
-  photoList: []
+  photoList: [],
+  nowIndex:0
 }
 
 const mutations = {

@@ -24,8 +24,7 @@
                       this.nowIndex = 0;
                  }
             },
-             swiperight(){
-                
+             swiperight(){                
                  this.nowIndex--;
                 if(this.nowIndex == -1){
                     this.nowIndex = this.$store.state.photoList.length-1;

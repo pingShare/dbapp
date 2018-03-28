@@ -2,7 +2,8 @@
   <ul class="music">
       <li v-for="music in musicList" :key="music.id">
         <router-link :to="'/music/musicalbum/'+music.id">
-            <img :src="music.bg" alt="肿么肥四(只管点￣ω￣=)">
+            <img :src="music.bg" alt="">
+            <!-- <img src="/static/img/soar_music.jpg" alt=""> -->
         </router-link>
       </li>
       
@@ -37,13 +38,10 @@ export default {
 }
 .music li{
     float: left;
-    width:50%;
-    height: auto;
+     width:50%;
 }
 .music a{
     display:block;
-    width: 100%;
-    height: 300px;
 }
 .music li img{
     width: 100%;

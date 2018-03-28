@@ -3,7 +3,7 @@
       <p><input name="email" type="text" placeholder="请输入用户名" v-model="name"></p> 
       <p><input name="pwd" type="password" placeholder="请输入密码" v-model="pwd"></p>
       <p v-if="isShow">*请输入用户名或密码</p>
-      <p><input type="submit" value="登录" @click="login"></p>
+      <p><input type="submit" value="登录"></p> <!--@click="login"-->
       <router-link to="/reg">还未注册？点击去注册</router-link>
   </div>
 </template>
@@ -21,8 +21,8 @@ export default{
            isShow:false
         } 
     },
-    methods:{
-        login(){
+  //  methods:{
+       /*  login(){
             if(this.name==""||this.pwd==""){
                 this.isShow = true;
             }
@@ -41,8 +41,8 @@ export default{
                     }
                 }).catch();
             }
-        }
-    }
+        } */
+    //}
 }
 </script>
 
