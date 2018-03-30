@@ -2,13 +2,12 @@
 <div>
 <commonHeader></commonHeader>
     <ul class="index">
-        <router-link to="/index-now">
-            <li @click="changeColor($event)" :data-flag="true" :class="{color:isTrue}" 
-            >正在上映</li>
-        </router-link>
-       <router-link to="/index-fut">
-             <li @click="changeColor($event)" :class="{color:isTrue}">即将上映</li>
-       </router-link>
+        <li v-for="(item,index) in cont" :key="index" 
+         @click="changeColor(index)">        
+          <router-link :to="item.path" :class="{select:index==thisIndex}" >
+              {{item.name}}
+          </router-link>
+        </li>
     </ul>
     <router-view></router-view>
 <commonFooter></commonFooter>
@@ -23,25 +22,19 @@ export default {
     return {
       bro: [], //其他的兄弟元素
       children: [], //父元素的所有子元素
-      isTrue: true
-      // isRight:false
+      thisIndex:0,
+      cont:[{
+        path:"/index-now",
+        name:"正在上映"
+      },{
+        path:"/index-fut",
+        name:"即将上映"
+      }]
     };
   },
   methods: {
-    changeColor(event) {
-      //console.log(event.target);
-      this.isTrue = !this.isTrue; //???
-      //获取当前点击元素的兄弟节点
-      this.children = event.currentTarget.parentNode.children;
-      for (var i = 0; i < this.children.length; i++) {
-        if (this.children[i] != event.currentTarget) {
-          bro.push(this.children[i]);
-        }
-        return this.bro;
-      }
-      for (var i = 0; i < this.children.length; i++) {
-        this.bro[i].isTrue = !this.bro[i].isTrue;
-      }
+    changeColor(index) {
+         this.thisIndex = index;
     }
   },
   components: {
@@ -64,12 +57,12 @@ export default {
   left: 0;
   right: 0;
 }
-li {
+li a{
   width: 50%;
   color: #777;
   float: left;
 }
-.color {
+.select{
   color: #42bd56;
 }
 </style>

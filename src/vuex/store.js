@@ -4,7 +4,7 @@ Vue.use(Vuex);
 
 const state = {
   photoList: [],
-  nowIndex:0
+ // nowIndex
 }
 
 const mutations = {

@@ -1,9 +1,9 @@
 <template>
   <div class="con" id="login">
-      <p><input name="email" type="text" placeholder="请输入用户名" v-model="name"></p> 
-      <p><input name="pwd" type="password" placeholder="请输入密码" v-model="pwd"></p>
+      <p><input name="username" v-model="userName" type="text" placeholder="请输入用户名"></p> 
+      <p><input name="pwd" v-model="pwd" type="password" placeholder="请输入密码"></p>
       <p v-if="isShow">*请输入用户名或密码</p>
-      <p><input type="submit" value="登录"></p> <!--@click="login"-->
+      <p><input type="submit" @click="addUser" value="注册"></p> <!--@click="login"-->
       <router-link to="/reg">还未注册？点击去注册</router-link>
   </div>
 </template>
@@ -16,11 +16,23 @@ import Axios from 'axios'
 export default{
     data(){
         return{
-           name:"",
+           userName:"",
            pwd:"",
            isShow:false
         } 
     },
+    methods:{
+        addUser(){
+            var name = this.userName;
+            var pwd = this.pwd;
+            Axios.post('/api/user/addUser',{
+                username:name,
+                pwd:pwd
+            },{}).then(response => {
+                console.log(response);
+            })
+        }
+    }
   //  methods:{
        /*  login(){
             if(this.name==""||this.pwd==""){
@@ -43,6 +55,7 @@ export default{
             }
         } */
     //}
+
 }
 </script>
 

@@ -1,12 +1,11 @@
 <template>
 <ul id="footer"> <!-- style="color:#42bd56" -->
-     <router-link v-for="(item,index) in menu" :key="index" :to="item.path"
-     :class="{active:index==nowIndex}" @click.native="addColor(index)">
-     <li @click="addd(index)">
-           {{item.content}}
-           {{nowIndex}}
-     </li>    
-     </router-link>
+    <li v-for="(item,index) in menu" :key="index" >
+      <router-link :to="item.path">
+        {{item.content}}
+      </router-link>
+
+    </li>
 </ul>
 
 </template>
@@ -28,7 +27,7 @@ export default {
         },
         {
           path: "/piclist",
-          content: "美图"
+          content: "图片"
         },
         {
           path: "/login",
@@ -37,25 +36,11 @@ export default {
       ]
     };
   },
-  methods: {
-    addColor(index) {
-      this.nowIndex = index;
-     /*   console.log("a里的this.nowIndex:"+this.nowIndex);
-     console.log("a里的index:"+index) */
-    },
-  addd(index){
-/*     console.log("---");
-     console.log("li里的this.nowIndex:"+this.nowIndex);
-     console.log("li里的index:"+index);   */    
-  }
-  }
 };
 </script>
 
 <style scoped>
-.active {
-  color: #42bd56;
-}
+
 #footer {
   height: 50px;
   position: fixed;
@@ -66,8 +51,13 @@ export default {
   border-top: 1px solid #42bd56;
   display: flex;
 }
-ul {
+#footer {
   display: flex;
+}
+
+#footer li{
+  flex-grow: 1;
+  color: black;
 }
 a {
   color: black;
@@ -75,6 +65,10 @@ a {
   display: inline-block;
   width: 100%;
   height: 100%;
+}
+
+#footer a.router-link-active{
+  color: #42bd56;
 }
 /*  li {
   width: 100%;
