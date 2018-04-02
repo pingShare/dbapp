@@ -7,15 +7,17 @@
 </template>
 
 <script>
-import Axios from 'axios'
-import VueResource from 'vue-resource'
-export default{
-    methods:{
-        register(){
-            console.log("reginster");
-        }
+import Axios from "axios";
+import VueResource from "vue-resource";
+export default {
+  methods: {
+    register() {
+      Axios.get("")
+        .then()
+        .catch();
     }
-}
+  }
+};
 </script>
 
 <style>
