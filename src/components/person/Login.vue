@@ -3,6 +3,7 @@
       <p><input name="username" v-model="name" type="text" placeholder="请输入用户名"></p> 
       <p><input name="pwd" v-model="pwd" type="password" placeholder="请输入密码"></p>
       <p v-if="isShow">*请输入用户名或密码</p>
+      <p>若注册不成功可用aa测试，账号密码相同</p>
       <p><input type="submit" @click="login" value="登录"></p> <!--@click="login"-->
       <router-link to="/reg">还未注册？点击去注册</router-link>
   </div>
@@ -36,6 +37,8 @@ export default{
                     }
                     else{
                         alert('登录成功');
+                        this.$cookie.set('name',this.name);
+                        console.log()                          
                         this.$router.push('/logined');
                     } 
                 }).catch();
@@ -46,7 +49,7 @@ export default{
 }
 </script>
 
-<style>
+<style scoped>
 #login p{
     margin: 0.5rem 0;
     height: 0.86rem;

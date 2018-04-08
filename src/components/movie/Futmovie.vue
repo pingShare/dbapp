@@ -3,7 +3,6 @@
       <commonHeader></commonHeader>
      <div id="detail_top" class="clearfix">   <!--轮播图 -->
     
-
     <swipe id="my-swipe">
         <swipe-item  v-for="imgsrc in detail.stageImg.list" :key="imgsrc.imgUrl">
             <img :src="imgsrc.imgUrl" alt="">

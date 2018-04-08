@@ -10,18 +10,24 @@
 import Axios from "axios";
 import VueResource from "vue-resource";
 export default {
-  data(){
-    return{
-      reg_name:'',
-      reg_pwd:''
-    }
+  data() {
+    return {
+      reg_name: "",
+      reg_pwd: ""
+    };
   },
   methods: {
     register() {
-       let data={"reg_name":this.reg_name,"reg_pwd":this.reg_pwd};
-      Axios.get("http://localhost/appci/index.php/user/reg",{params:data})
-        .then(res=>{
-               console.log(res);
+      let data = { reg_name: this.reg_name, reg_pwd: this.reg_pwd };
+      Axios.get("http://localhost/appci/index.php/user/reg", { params: data })
+        .then(res => {
+          //console.log(res);
+          if (res) {
+           // alert("用户名或密码错误");
+         // } else {
+            alert("登录成功");
+            this.$router.push("/logined");
+          }
         })
         .catch();
     }
@@ -30,5 +36,8 @@ export default {
 </script>
 
 <style>
-
+input{
+    width:4rem;
+    height: 0.8rem;
+}
 </style>
